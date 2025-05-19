@@ -4,19 +4,21 @@
   "info": {
     "singularName": "illustration",
     "pluralName": "illustrations",
-    "displayName": "Illustration"
+    "displayName": "Illustration",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

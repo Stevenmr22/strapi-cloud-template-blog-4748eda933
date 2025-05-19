@@ -404,6 +404,7 @@ export interface ApiIllustrationIllustration
   extends Struct.CollectionTypeSchema {
   collectionName: 'illustrations';
   info: {
+    description: '';
     displayName: 'Illustration';
     pluralName: 'illustrations';
     singularName: 'illustration';
@@ -415,7 +416,7 @@ export interface ApiIllustrationIllustration
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    image: Schema.Attribute.Media<'images' | 'files'>;
+    image: Schema.Attribute.Media<'images' | 'files', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
