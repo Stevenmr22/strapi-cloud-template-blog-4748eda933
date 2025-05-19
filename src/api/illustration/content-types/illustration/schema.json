@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "illustrations",
+  "info": {
+    "singularName": "illustration",
+    "pluralName": "illustrations",
+    "displayName": "Illustration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
